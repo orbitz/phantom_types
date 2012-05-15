@@ -10,7 +10,7 @@ will_not_compile: estring.cmo will_not_compile.ml
 estring.cmo: estring.cmi
 
 clean:
-	rm will_compile *.cmo *.cmi
+	rm will_compile a.out *.cmo *.cmi
 
 %.cmi : %.mli
 	ocamlc $<

@@ -10,7 +10,7 @@ will_not_compile: rstring.cmo will_not_compile.ml
 rstring.cmo: rstring.cmi
 
 clean:
-	rm will_compile *.cmo *.cmi
+	rm will_compile a.out *.cmo *.cmi
 
 %.cmi : %.mli
 	ocamlc $<
